@@ -1,0 +1,29 @@
+#数据库配置
+spring:
+  datasource:
+    url: jdbc:mysql://xxx.xxx.xx:3306/bilibili
+    username: root
+    password: xxxxxx
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 120000
+
+  redis:
+    port: 6379
+    host: xxx.xxx.xx
+    password: xxxxxx
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 500MB
+  application:
+    name: bilibili-api
+rocketmq:
+  name:
+    server:
+      address: xxx.xxx.xx:9876
+fdfs:
+  tracker-list: xxx.xxx.xx:22122
+#  文件存储路径（自用）
+  http:
+    storage-addr: http://xxx.xxx.xx:8888/group1/

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.laiyuejia.bilibili.mapper.AuthRoleMenuMapper">
+
+    <resultMap id="BaseResultMap" type="cn.laiyuejia.bilibili.domain.auth.AuthRoleMenu">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="roleId" column="role_id" jdbcType="BIGINT"/>
+            <result property="menuId" column="menu_id" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,role_id,menu_id,
+        create_time
+    </sql>
+
+    <resultMap id="AuthMenuResultMap" type="cn.laiyuejia.bilibili.domain.auth.AuthRoleMenu">
+        <id column="id" property="id" />
+        <id column="role_id" property="roleId"/>
+        <id column="menu_id" property="menuId"/>
+        <association property="authMenu" javaType="cn.laiyuejia.bilibili.domain.auth.AuthMenu">
+            <id column="name" property="name" />
+            <id column="code" property="code"/>
+        </association>
+    </resultMap>
+
+    <select id="getRoleMenusByRoleIds" parameterType="java.util.Set" resultMap="AuthMenuResultMap">
+        select
+        arm.*,
+        am.name,
+        am.code
+        from
+        t_auth_role_menu arm
+        left join t_auth_menu am
+        on arm.menu_id = am.id
+        where
+        arm.role_id in
+        <foreach collection="roleIdSet" item="roleId" index="index" open="(" close=")" separator=",">
+            #{roleId}
+        </foreach>
+    </select>
+</mapper>

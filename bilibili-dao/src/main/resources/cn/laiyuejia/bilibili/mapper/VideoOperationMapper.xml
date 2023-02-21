@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.laiyuejia.bilibili.mapper.VideoOperationMapper">
+
+    <resultMap id="BaseResultMap" type="cn.laiyuejia.bilibili.domain.VideoOperation">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="videoId" column="video_id" jdbcType="BIGINT"/>
+            <result property="operationType" column="operation_type" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,video_id,
+        operation_type,create_time
+    </sql>
+    <select id="getAllUserPreference" resultType="cn.laiyuejia.bilibili.domain.UserPreference">
+        select
+            user_id,video_id
+            sum(case operation_type
+                    when '0' then 6
+                    when '1' then 2
+                    when '2' then 2
+                    else 0 end
+            ) as `value`
+        from t_video_operation
+        group by user_id,video_id
+    </select>
+</mapper>
