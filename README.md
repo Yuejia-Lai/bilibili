@@ -8,6 +8,7 @@
 <div align="center">
 <b>基于 Spring Boot 的仿bilibili后端项目</b>
 </div>
+
 ​							![Java](https://img.shields.io/badge/Java-1.8-orange) ![SpringBoot](https://img.shields.io/badge/SpringBoot-2.7.8-green) ![MySQL](https://img.shields.io/badge/MySQL-8.0-yellowgreen) ![JWT](https://img.shields.io/badge/Java--JWT-4.2.1-yellow) ![](https://img.shields.io/badge/FastJson-1.2.79-lightgrey)
 
 ​									 ![MyBatis Plus](https://img.shields.io/badge/-MyBatis%20Plus-red) ![RocketMQ](https://img.shields.io/badge/-RocketMQ-brightgreen) ![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-lightgrey) ![Redis](https://img.shields.io/badge/-Redis-blue) ![FastDFS](https://img.shields.io/badge/-FastDFS-blueviolet) ![mahout](https://img.shields.io/badge/-mahout-orange)
