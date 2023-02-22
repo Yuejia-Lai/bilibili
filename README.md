@@ -5,13 +5,28 @@
 <div align="center">
 <h1>bilibili(仿)</h1>
 </div>
+
 <div align="center">
 <b>基于 Spring Boot 的仿bilibili后端项目</b>
 </div>
 
-​							![Java](https://img.shields.io/badge/Java-1.8-orange) ![SpringBoot](https://img.shields.io/badge/SpringBoot-2.7.8-green) ![MySQL](https://img.shields.io/badge/MySQL-8.0-yellowgreen) ![JWT](https://img.shields.io/badge/Java--JWT-4.2.1-yellow) ![](https://img.shields.io/badge/FastJson-1.2.79-lightgrey)
+<div align="center">
+<img src="https://img.shields.io/badge/Java-1.8-orange"/>
+<img src="https://img.shields.io/badge/SpringBoot-2.7.8-green"/>
+<img src="https://img.shields.io/badge/MySQL-8.0-yellowgreen"/>
+<img src="https://img.shields.io/badge/Java--JWT-4.2.1-yellow"/>
+<img src="https://img.shields.io/badge/FastJson-1.2.79-lightgrey"/>
+</div>
 
-​									 ![MyBatis Plus](https://img.shields.io/badge/-MyBatis%20Plus-red) ![RocketMQ](https://img.shields.io/badge/-RocketMQ-brightgreen) ![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-lightgrey) ![Redis](https://img.shields.io/badge/-Redis-blue) ![FastDFS](https://img.shields.io/badge/-FastDFS-blueviolet) ![mahout](https://img.shields.io/badge/-mahout-orange)
+<div align="center">
+<img src="https://img.shields.io/badge/-MyBatis%20Plus-red"/>
+<img src="https://img.shields.io/badge/-RocketMQ-brightgreen"/>
+<img src="https://img.shields.io/badge/-ElasticSearch-lightgrey"/>
+<img src="https://img.shields.io/badge/-Redis-blue"/>
+<img src="https://img.shields.io/badge/-FastDFS-blueviolet"/>
+<img src="https://img.shields.io/badge/-mahout-orange"/>
+</div>
+
 
 ## 项目简介
 
