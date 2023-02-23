@@ -82,21 +82,21 @@
 
 ## 项目模块说明
 
-- bilibili-api：项目核心模块，提供项目对外API接口以及权限校验
-- bilibili-service：提供各种配置类以及工具类，拦截器等，提供服务接口（Interface）及其实现类
-- bilibili-dao：提供实体类对象，Repository，mapper，自定义异常，常量，自定义注解
+- `bilibili-api`：项目核心模块，提供项目对外API接口以及权限校验
+- `bilibili-service`：提供各种配置类以及工具类，拦截器等，提供服务接口（Interface）及其实现类
+- `bilibili-dao`：提供实体类对象，Repository，mapper，自定义异常，常量，自定义注解
 
 ## 如何使用本项目
 
-在使用本项目前，请在MySQL中新建‘bilibili’数据库，然后执行sql文件夹下的sql文件，生成对应的表
+在使用本项目前，请在MySQL中**新建‘bilibili’数据库**，然后执行sql文件夹下的sql文件，**生成对应的表**
 
 - **方法一：**
 
-下载源码，导入Idea，配置运行bilibili-api模块下的BilibiliApp即可
+下载源码，导入Idea，配置运行`bilibili-api`模块下的`BilibiliApp`即可
 
-> **注意：**因为隐藏了配置文件，所以需要修改各个模块下的application.yml配置文件才可以正常启动
+> 注意：因为隐藏了配置文件，所以需要修改各个模块下的application.yml配置文件才可以正常启动
 
 - **方法二：**
 
-使用java -jar 运行bilibili-api模块下的 bilibili-api-1.0-SNAPSHOT.jar 即可
+使用`java -jar` 命令运行`bilibili-api`模块下的 `bilibili-api-1.0-SNAPSHOT.jar` 即可
 
